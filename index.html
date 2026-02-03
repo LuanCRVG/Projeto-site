@@ -1,28 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso em Video</title>
-    <link rel="stylesheet" href="estilos/style.css">
+<meta charset="UTF-8">
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin: 30px 40px;
+        color:#000;
+    }
+
+    h1{
+        text-align:center;
+        font-size:16px;
+        margin-bottom:20px;
+    }
+
+    .bloco{
+        margin-bottom:10px;
+    }
+
+    .linha{
+        display:flex;
+        align-items:flex-end;
+        margin-bottom:6px;
+    }
+
+    .linha label{
+        margin-right:6px;
+        white-space:nowrap;
+    }
+
+    .linha input{
+        flex:1;
+        border:none;
+        border-bottom:1px solid #000;
+        height:18px;
+        font-size:12px;
+        padding:2px;
+    }
+
+    .metade{ flex:0.5 !important; }
+    .terco{ flex:0.33 !important; }
+
+    .titulo{
+        font-weight:bold;
+        margin-top:15px;
+        margin-bottom:6px;
+    }
+
+    .texto{
+        margin:10px 0;
+        text-align:justify;
+    }
+
+    .checkbox{
+        margin:8px 0 12px 0;
+    }
+
+    .assinatura{
+        margin-top:50px;
+        text-align:center;
+    }
+
+    button{
+        margin-top:20px;
+        padding:8px 16px;
+        font-size:14px;
+        cursor:pointer;
+    }
+
+    @media print{
+        button{ display:none; }
+        body{ margin:20px 30px; }
+    }
+</style>
 </head>
+
 <body>
-     <main>
 
-        <header>
-          <h1>Cursos Grátis</h1>
-          <img src="" alt="">
+<h1>PROCURAÇÃO PARA SOLICITAÇÃO DE RETIFICAÇÃO</h1>
 
-        </header>
-         <article>
-            <h2>Curso de HTML5 com CSS3</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, adipisci reiciendis id accusantium vel ipsa nobis nisi laboriosam sit quidem doloribus consequuntur voluptate minima, aliquam culpa. Perferendis veniam quasi mollitia.
-            </p>
-         </article>
-         <article>
-            <h2>Curso de JavaScript</h2>
-            <p>Lorem ipsum dbolor sit amet consectetur adipisicing elit. Quidem nesciunt ex architecto molestias ipsum sapiente perspiciatis, accusamus quam cum libero quisquam nulla, totam incidunt dicta et animi voluptatem suscipit quasi.</p>
-         </article>
-     </main>
+<div class="titulo">OUTORGANTE:</div>
+
+<div class="linha"><label>Nome:</label><input></div>
+
+<div class="linha">
+    <label>Nacionalidade:</label><input class="terco">
+    <label>Estado civil:</label><input class="terco">
+    <label>Profissão:</label><input class="terco">
+</div>
+
+<div class="linha">
+    <label>Identidade nº:</label><input class="terco">
+    <label>Expedida pelo:</label><input class="terco">
+    <label>CPF nº:</label><input class="terco">
+</div>
+
+<div class="linha"><label>Residente à:</label><input></div>
+<div class="linha"><label>Tel:</label><input class="metade"></div>
+
+<div class="texto">
+Nesta cidade, pelo presente instrumento, nomeia e constitui como seu(sua)bastante Procurador(a):
+</div>
+
+<div class="titulo">OUTORGADO:</div>
+
+<div class="linha"><label>Nome:</label><input></div>
+
+<div class="linha">
+    <label>Nacionalidade:</label><input class="terco">
+    <label>Estado civil:</label><input class="terco">
+    <label>Profissão:</label><input class="terco">
+</div>
+
+<div class="linha">
+    <label>Identidade nº:</label><input class="terco">
+    <label>Expedida pelo:</label><input class="terco">
+    <label>CPF nº:</label><input class="terco">
+</div>
+
+<div class="linha"><label>Residente à:</label><input></div>
+<div class="linha"><label>Tel:</label><input class="metade"></div>
+
+<div class="texto">
+nesta cidade, com poderes para representar o Outorgante perante o Cartório do 14º Registro Civil de Pessoas Naturais da Capital do Rio de Janeiro, para requerer/solicitar a RETIFICAÇÃO DO REGISTRO DE:
+</div>
+
+<div class="checkbox">
+    <label><input type="checkbox"> NASCIMENTO</label>
+    &nbsp;&nbsp;&nbsp;
+    <label><input type="checkbox"> CASAMENTO</label>
+    &nbsp;&nbsp;&nbsp;
+    <label><input type="checkbox"> ÓBITO</label>
+</div>
+
+<div class="linha"><label>De:</label><input></div>
+
+<div class="linha">
+    <label>Registrado sob nº:</label><input class="terco">
+    <label>Folhas:</label><input class="terco">
+    <label>Livro:</label><input class="terco">
+</div>
+
+<div class="texto">
+Responsabilizando-se por todos os atos praticados no cumprimento deste instrumento, cessando os efeitos deste após a conclusão.
+</div>
+
+<div class="linha">
+    <label>Rio de Janeiro,</label><input class="terco">
+    <label>de</label><input class="terco">
+    <label>de</label><input class="terco">
+</div>
+
+<div class="assinatura">
+    _________________________________________________<br>
+    
+</div>
+
+<button onclick="window.print()">Imprimir</button>
+
 </body>
 </html>
